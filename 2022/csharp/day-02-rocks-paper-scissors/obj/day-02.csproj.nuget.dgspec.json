@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02\\day-02.csproj": {}
+    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02\\day-02.csproj": {
+    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02\\day-02.csproj",
+        "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj",
         "projectName": "day-02",
-        "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02\\day-02.csproj",
+        "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj",
         "packagesPath": "C:\\Users\\KristopherBetz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02\\obj\\",
+        "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KristopherBetz\\AppData\\Roaming\\NuGet\\NuGet.Config",

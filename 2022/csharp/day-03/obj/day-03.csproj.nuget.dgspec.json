@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj": {}
+    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj": {
+    "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj",
-        "projectName": "dotnet",
-        "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj",
+        "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj",
+        "projectName": "day-03",
+        "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj",
         "packagesPath": "C:\\Users\\KristopherBetz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\obj\\",
+        "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\KristopherBetz\\AppData\\Roaming\\NuGet\\NuGet.Config",

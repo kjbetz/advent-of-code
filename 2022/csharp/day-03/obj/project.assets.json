@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj",
-      "projectName": "day-02",
-      "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj",
+      "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj",
+      "projectName": "day-03",
+      "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\day-03.csproj",
       "packagesPath": "C:\\Users\\KristopherBetz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\obj\\",
+      "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-03\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KristopherBetz\\AppData\\Roaming\\NuGet\\NuGet.Config",

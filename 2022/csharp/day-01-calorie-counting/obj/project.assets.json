@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\dotnet\\day-01-calorie-counting\\dotnet\\dotnet.csproj",
+      "projectUniqueName": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj",
       "projectName": "dotnet",
-      "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\dotnet\\day-01-calorie-counting\\dotnet\\dotnet.csproj",
+      "projectPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\dotnet.csproj",
       "packagesPath": "C:\\Users\\KristopherBetz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\dotnet\\day-01-calorie-counting\\dotnet\\obj\\",
+      "outputPath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-01-calorie-counting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\KristopherBetz\\AppData\\Roaming\\NuGet\\NuGet.Config",
