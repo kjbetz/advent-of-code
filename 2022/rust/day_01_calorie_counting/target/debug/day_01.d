@@ -1,0 +1,1 @@
+C:\Users\KristopherBetz\Source\Repos\kjbetz\advent-of-code\2022\rust\day_01_calorie_counting\target\debug\day_01.exe: C:\Users\KristopherBetz\Source\Repos\kjbetz\advent-of-code\2022\rust\day_01_calorie_counting\src\input.txt C:\Users\KristopherBetz\Source\Repos\kjbetz\advent-of-code\2022\rust\day_01_calorie_counting\src\main.rs
