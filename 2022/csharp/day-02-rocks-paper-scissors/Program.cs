@@ -1,7 +1,21 @@
-﻿string[] lines = System.IO.File.ReadAllLines(@"./input.txt");
+﻿using Ardalis.SmartEnum;
+
+string[] lines = System.IO.File.ReadAllLines(@"./input.txt");
 
 // Console.WriteLine($"Your score is: {OriginalAttempt(lines)}");
 Console.WriteLine($"Your score is: {SecondAttempt(lines)}");
+Console.WriteLine($"Your score is: {ThirdAttempt(lines)}");
+
+int ThirdAttempt(string[] lines)
+{
+    foreach (string line in lines)
+    {
+        (string hand, string outcome) = line.Split(" ");
+        Console.WriteLine($"hand: {hand}, outcome: {outcome}");
+    }
+
+    return 0;
+}
 
 int SecondAttempt(string[] lines)
 {
@@ -65,8 +79,40 @@ int OriginalAttempt(string[] lines)
     return score;
 }
 
+abstract class Hand : SmartEnum<Hand>
+{
+    public static readonly Hand Rock = new RockHand();
+    public static readonly Hand Paper = new PaperHand();
+    public static readonly Hand Scissors = new ScissorsHand();
 
+    private Hand(string name, int value) : base(name, value) {}
 
+    public abstract bool CanBeat(Hand next);
+
+    private sealed class RockHand : Hand
+    {
+        public RockHand() : base("Rock", 1) { }
+
+        public override bool CanBeat(Hand next) =>
+            next == Hand.Scissors;
+    }
+
+    private sealed class PaperHand : Hand
+    { 
+        public PaperHand() : base("Paper", 2) { }
+
+        public override bool CanBeat(Hand next) =>
+            next == Hand.Rock;
+    }
+
+    private sealed class ScissorsHand : Hand
+    {
+        public ScissorsHand() : base("Scissors", 3) { }
+
+        public override bool CanBeat(Hand next) =>
+            next == Hand.Paper;
+    }
+}
 
 public static class Extensions
 {

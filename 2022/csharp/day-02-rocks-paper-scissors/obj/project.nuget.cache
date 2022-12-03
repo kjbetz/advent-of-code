@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MNhwtaJ2Smalyujlb3S15itbwvhqLsfBdr8HQ6WfnJIhsdjXuxJ1+poJ4a4QR/UoCF8G3w9yoXQv85TCa0j2Bg==",
+  "dgSpecHash": "PEa7bKT65DRvSsm2o2aAgj90UA6WqdFGchkNd9l8m752UjM9/4Hjym/yFAuqzgYUgizj633djIyaTozwRP4FFQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\KristopherBetz\\Source\\Repos\\kjbetz\\advent-of-code\\2022\\csharp\\day-02-rocks-paper-scissors\\day-02.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\KristopherBetz\\.nuget\\packages\\ardalis.smartenum\\2.1.0\\ardalis.smartenum.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
