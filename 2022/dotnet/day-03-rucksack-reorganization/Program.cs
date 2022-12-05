@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-string[] lines = System.IO.File.ReadAllLines(@"./input.txt");
+﻿string[] lines = System.IO.File.ReadAllLines(@"./input.txt");
 
 Console.WriteLine($"Part 1 Value: {Part01(lines)}");
 Console.WriteLine($"Part 2 Value: {Part02(lines)}");
@@ -81,6 +80,9 @@ int Part02(string[] lines)
 int Part02Refactored(string[] lines)
 {
     int sum = 0;
+
+    HashSet<char> sack1 = new();
+    HashSet<char> sack2 = new();
 
     return sum;
 }
