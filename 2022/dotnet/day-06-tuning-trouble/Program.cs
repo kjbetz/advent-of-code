@@ -3,6 +3,28 @@
 foreach (string line in lines)
 {
     Console.WriteLine($"{FindSequenceNumber(line)}");
+    Console.WriteLine($"{SecondIdeaStolenFromGnoat(line)}");
+    Console.WriteLine($"{SecondIdeaStolenFromGnoat(line, 14)}");
+}
+
+
+int SecondIdeaStolenFromGnoat(string line, int windowSize = 4)
+{
+    for (int i = 0; i < line.Length; i++)
+    {
+        if (i + windowSize < line.Length)
+        {
+            string s = line.Substring(i, windowSize);
+            HashSet<char> c = new(s);
+
+            if (s.Length == c.Count)
+            {
+                return i + windowSize;
+            }
+        }
+    }
+
+    return 0;
 }
 
 int FindSequenceNumber(string line)
