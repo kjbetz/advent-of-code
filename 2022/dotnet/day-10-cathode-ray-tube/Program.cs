@@ -6,8 +6,6 @@ List<int> signalStrengths = new();
 
 PartOne();
 
-Console.WriteLine();
-
 cycle = 0;
 value = 1;
 
@@ -22,38 +20,38 @@ void PartTwo()
         if (instruction[0] == "noop")
         {
             DrawCycle();
-            cycle++;
         }
         else if (instruction[0] == "addx")
         {
-            DrawCycle();
-            cycle++;
-         
-            DrawCycle();
-            cycle++;
+            DrawCycle(2);
 
             value += int.Parse(instruction[1]);
         }
     }
 }
 
-void DrawCycle()
+void DrawCycle(int cycles = 1)
 {
-    int position = cycle - (40 * ((cycle) / 40));
-    // Console.WriteLine($"value: {value}, cycle: {cycle}, position: {position}");
+    for (int i = 0; i < cycles; i++)
+    {
+        int position = cycle - (40 * ((cycle) / 40));
+        // Console.WriteLine($"value: {value}, cycle: {cycle}, position: {position}");
 
-    if (position >= value - 1 && position <= value + 1)
-    {
-        Console.Write("#");
-    } 
-    else
-    {
-        Console.Write(".");
-    }
+        if (position >= value - 1 && position <= value + 1)
+        {
+            Console.Write("#");
+        } 
+        else
+        {
+            Console.Write(".");
+        }
 
-    if ((cycle + 1) % 40 == 0)
-    {
-        Console.Write("\n");
+        if ((cycle + 1) % 40 == 0)
+        {
+            Console.Write("\n");
+        }
+
+        cycle++;
     }
 }
 
@@ -79,8 +77,9 @@ void PartOne()
         }
     }
 
-    Console.WriteLine($"Sum of signal strengths: {signalStrengths.Sum()}");
+    Console.WriteLine($"Sum of signal strengths: {signalStrengths.Sum()}\n");
 }
+
 void LogCycle()
 {
     if(cycle == 20 || (cycle <= 220 && (cycle - 20) % 40 == 0))
