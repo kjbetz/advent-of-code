@@ -1,0 +1,47 @@
+﻿string[] lines = File.ReadAllLines("./input-test.txt");
+
+int cycle = 0;
+int value = 1;
+List<int> signalStrengths = new();
+List<int> cycles = new List<int> { 20, 60, 100, 140, 180, 220 };
+
+int i = 0;
+foreach (string line in lines)
+{
+    i++;
+    string[] instruction = line.Split(" ");
+
+    if (instruction[0] == "noop")
+    {
+        cycle++;
+        LogCycle();
+    } 
+    else if (instruction[0] == "addx")
+    {
+        cycle++;
+        LogCycle();
+        cycle++;
+        value += int.Parse(instruction[1]);
+        LogCycle();
+    }
+}
+
+Console.WriteLine($"{i}");
+
+foreach (int signal in signalStrengths)
+{
+    Console.WriteLine($"{signal}");
+}
+
+Console.WriteLine($"Sum of signal strengths: {signalStrengths.Sum()}");
+
+void LogCycle()
+{
+    if(cycles.Contains(cycle))
+    {
+        Console.WriteLine($"Cycle: {cycle}, Value: {value}, Signal strength: {cycle * value}");
+        signalStrengths.Add(cycle * value);
+    }
+}
+
+
