@@ -129,7 +129,6 @@
 
         // Part 2
 
-
         for (int y = 0; y < lines.Length; y++)
         {
             string tempNumber = string.Empty;
