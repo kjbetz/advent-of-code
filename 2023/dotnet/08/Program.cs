@@ -2,7 +2,7 @@
 
 Dictionary<string, Coordinate> map = new();
 string moves = lines[0];
-int movesCount = 0;
+ulong movesCount = 0;
 
 for (int i = 2; i < lines.Length; i++)
 {
@@ -38,15 +38,14 @@ foreach (KeyValuePair<string, Coordinate> entry in map)
     if (entry.Key.Substring(2) == "A")
     {
         startingPoints.Add(new Point(entry.Key));
-        Console.WriteLine($"Starting point: {entry.Key}");
     }
 }
 
 foreach (Point point in startingPoints)
 {
-    int currentMove = 0;
-    ulong movesCount = 0;
-    string currentPoint = point.Start;
+    currentMove = 0;
+    movesCount = 0;
+    currentPoint = point.Start;
 
     while (currentPoint.Substring(2) != "Z")
     {
