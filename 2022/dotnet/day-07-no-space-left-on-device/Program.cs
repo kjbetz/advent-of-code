@@ -35,7 +35,7 @@ while (i < lines.Length)
                         {
                             currentDirectory?.SubDirectories.Add(new DirectoryNode(output[1], currentDirectory));
                         } else {
-                            if (Int32.TryParse(output[0], out int fileSize))
+                            if (int.TryParse(output[0], out int fileSize))
                             {
                                 currentDirectory?.Files.Add(new File(output[1], fileSize));
                             }
@@ -128,11 +128,11 @@ public class DirectoryNode
 
     public DirectoryNode(string name, DirectoryNode? parentDirectory = null)
     {
-        this.Name = name;
-        this.Size = 0;
-        this.ParentDirectory = parentDirectory;
-        this.SubDirectories = new List<DirectoryNode>();
-        this.Files = new List<File>();
+        Name = name;
+        Size = 0;
+        ParentDirectory = parentDirectory;
+        SubDirectories = new List<DirectoryNode>();
+        Files = new List<File>();
     }
 }
 
@@ -143,8 +143,8 @@ public class File
 
     public File(string name, int size)
     {
-        this.Name = name;
-        this.Size = size;
+        Name = name;
+        Size = size;
     }
 }
 

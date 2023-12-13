@@ -23,9 +23,9 @@ Stack<string>[] crates = new Stack<string>[]
 foreach (string move in moves)
 {
     string[] moveSplit = move.Split(" ");
-    int numberOfMoves = Int32.Parse(moveSplit[1]);
-    int fromStack = Int32.Parse(moveSplit[3]) - 1;
-    int toStack = Int32.Parse(moveSplit[5]) - 1;
+    int numberOfMoves = int.Parse(moveSplit[1]);
+    int fromStack = int.Parse(moveSplit[3]) - 1;
+    int toStack = int.Parse(moveSplit[5]) - 1;
     Stack<string> tempStack = new();
 
     for (int i = 0; i < numberOfMoves; i++)

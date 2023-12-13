@@ -1,5 +1,4 @@
 ﻿string[] lines = File.ReadAllLines("./input.txt");
-List<List<int>> areas = new List<List<int>>();
 
 int inclusives = 0;
 
@@ -13,12 +12,12 @@ foreach (string line in lines)
     string[] range2 = split[1].Split("-");
     List<int> area2 = new();
 
-    for (int i = Int32.Parse(range1[0]); i < Int32.Parse(range1[1]) + 1; i++)
+    for (int i = int.Parse(range1[0]); i < int.Parse(range1[1]) + 1; i++)
     {
         area1.Add(i);
     }
 
-    for (int i = Int32.Parse(range2[0]); i < Int32.Parse(range2[1]) + 1; i++)
+    for (int i = int.Parse(range2[0]); i < int.Parse(range2[1]) + 1; i++)
     {
         area2.Add(i);
     }

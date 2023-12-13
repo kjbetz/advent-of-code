@@ -19,17 +19,19 @@ int ThirdAttempt(string[] lines)
 
 int SecondAttempt(string[] lines)
 {
-    Dictionary<string, int> lookup = new();
-
-    lookup.Add("A X", 3);
-    lookup.Add("A Y", 4);
-    lookup.Add("A Z", 8);
-    lookup.Add("B X", 1);
-    lookup.Add("B Y", 5);
-    lookup.Add("B Z", 9);
-    lookup.Add("C X", 2);
-    lookup.Add("C Y", 6);
-    lookup.Add("C Z", 7);
+    Dictionary<string, int> lookup =
+        new()
+        {
+            { "A X", 3 },
+            { "A Y", 4 },
+            { "A Z", 8 },
+            { "B X", 1 },
+            { "B Y", 5 },
+            { "B Z", 9 },
+            { "C X", 2 },
+            { "C Y", 6 },
+            { "C Z", 7 }
+        };
 
     int score = 0;
 
@@ -51,27 +53,30 @@ int OriginalAttempt(string[] lines)
 
         score += hand1 switch
         {
-            "A" => outcome switch
-            {
-                "X" => 3,
-                "Y" => 4,
-                "Z" => 8,
-                _ => 0,
-            },
-            "B" => outcome switch
-            {
-                "X" => 1,
-                "Y" => 5,
-                "Z" => 9,
-                _ => 0,
-            },
-            "C" => outcome switch
-            {
-                "X" => 2,
-                "Y" => 6,
-                "Z" => 7,
-                _ => 0,
-            },
+            "A"
+                => outcome switch
+                {
+                    "X" => 3,
+                    "Y" => 4,
+                    "Z" => 8,
+                    _ => 0,
+                },
+            "B"
+                => outcome switch
+                {
+                    "X" => 1,
+                    "Y" => 5,
+                    "Z" => 9,
+                    _ => 0,
+                },
+            "C"
+                => outcome switch
+                {
+                    "X" => 2,
+                    "Y" => 6,
+                    "Z" => 7,
+                    _ => 0,
+                },
             _ => 0,
         };
     }
@@ -85,32 +90,33 @@ abstract class Hand : SmartEnum<Hand>
     public static readonly Hand Paper = new PaperHand();
     public static readonly Hand Scissors = new ScissorsHand();
 
-    private Hand(string name, int value) : base(name, value) {}
+    private Hand(string name, int value)
+        : base(name, value) { }
 
     public abstract bool CanBeat(Hand next);
 
     private sealed class RockHand : Hand
     {
-        public RockHand() : base("Rock", 1) { }
+        public RockHand()
+            : base("Rock", 1) { }
 
-        public override bool CanBeat(Hand next) =>
-            next == Hand.Scissors;
+        public override bool CanBeat(Hand next) => next == Hand.Scissors;
     }
 
     private sealed class PaperHand : Hand
-    { 
-        public PaperHand() : base("Paper", 2) { }
+    {
+        public PaperHand()
+            : base("Paper", 2) { }
 
-        public override bool CanBeat(Hand next) =>
-            next == Hand.Rock;
+        public override bool CanBeat(Hand next) => next == Hand.Rock;
     }
 
     private sealed class ScissorsHand : Hand
     {
-        public ScissorsHand() : base("Scissors", 3) { }
+        public ScissorsHand()
+            : base("Scissors", 3) { }
 
-        public override bool CanBeat(Hand next) =>
-            next == Hand.Paper;
+        public override bool CanBeat(Hand next) => next == Hand.Paper;
     }
 }
 

@@ -134,11 +134,11 @@ class Monkey
 
     public Monkey(int monkeyId, ulong[] items, Operation operation, Test test)
     {
-        this.Id = monkeyId;
-        this.Items = new Queue<ulong>(items);
-        this.OriginalItems = new Queue<ulong>(items);
-        this.Operation = operation;
-        this.Test = test;
+        Id = monkeyId;
+        Items = new Queue<ulong>(items);
+        OriginalItems = new Queue<ulong>(items);
+        Operation = operation;
+        Test = test;
     }
 }
 
